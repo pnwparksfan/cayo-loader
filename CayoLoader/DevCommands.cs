@@ -44,6 +44,9 @@ namespace CayoLoader
             MapFunctions.ToggleIslandMap(true);
             GameFiber.Sleep(2000);
             MapFunctions.DisableIslandCullbox();
+            MapFunctions.ToggleIPLs(LodList.VWDistLights, true);
+            MapFunctions.IsIslandWaterEnabled = false;
+            EnableIslandMinimap(true);
         }
 
         private static Blip mapBoundsBlip;
