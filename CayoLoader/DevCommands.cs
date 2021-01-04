@@ -13,6 +13,9 @@ namespace CayoLoader
     internal static class DevCommands
     {
         [ConsoleCommand]
+        private static void SetMainDistLights(bool enable) => MapFunctions.ToggleIPLs(LodList.VWDistLights, enable);
+
+        [ConsoleCommand]
         private static void SetIslandSLOD(bool enable) => MapFunctions.ToggleIPLs(LodList.SLODsIsland, enable);
 
         [ConsoleCommand]
